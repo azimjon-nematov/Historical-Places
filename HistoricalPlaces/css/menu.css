@@ -6,6 +6,20 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 
+
+}
+::-webkit-scrollbar
+{
+	width: 6px;
+}
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(transparent,#30ff00);
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background: linear-gradient(transparent,#00c6ff);
 }
 
 
@@ -15,8 +29,9 @@ body{
 	min-height: 100vh;
 	background: #350048;
 	width: 100%;
-	justify-content: space-around ;  
+	justify-content: center; ;  
 	text-align: center;
+	overflow: auto;
 }
 
 .container
@@ -27,7 +42,7 @@ body{
 	text-align: center;
 }
 
-.container .btn
+.container .btn 
 {
 	display: inline-block;
 	position: relative;
@@ -55,7 +70,7 @@ body{
 	border-radius: 30px;
 	color: #fff;
 	z-index: 1;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
 	overflow: hidden;
@@ -64,7 +79,7 @@ body{
 }
 .container .btn:hover a
 {
-	letter-spacing: 3px;
+	letter-spacing: 5px;
 	cursor: pointer;
 }
 .container .btn a::before
@@ -101,6 +116,274 @@ body{
 
 .Content{
 	
+}
+
+
+.container2
+{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.container2 .card
+{
+	width: 300px;
+	margin: 10px;
+	padding: 40px 30px;
+	background-color: #350048;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(255,255,255,.1),
+				 6px 6px 20px rgba(0,0,0,0.1);
+}
+.container2 .card:hover
+{
+box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
+			inset  6px 6px 20px rgba(0,0,0,0.05);	
+}
+
+.container2 .card .imgBox
+{
+	position: relative;
+	text-align: center;
+}
+.container2 .card .imgBox img
+{
+	max-width: 300px;
+}
+.container .card .ContentBox
+{
+	position: relative;
+	margin-top: 20px;
+	text-align: center;
+}
+.container2 .card .ContentBox h2
+{
+	color: #32a3b1;
+	font-weight: 700;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+}
+.container2 .card .ContentBox p
+{
+	color: #32a3b1;
+}
+.container2 .card .ContentBox a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 15px;
+	border-radius: 40px;
+	color: #32a3b1;
+	font-size: 16px;
+	text-decoration: none;
+	box-shadow:  -4px -4px 15px rgba(255,255,255,1),
+				  6px 6px 15px rgba(0,0,0,1);	
+
+}
+.container2 .card .ContentBox a:hover
+{
+box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5),
+			inset  6px 6px 10px rgba(0,0,0,0.1);	
+}
+.container2 .card a:hover span
+{
+	display: block;
+	transform: scale(0.98);
+}
+ .container2 .card:hover .ImgBox, .container2 .card:hover .ContentBox
+ {
+ 	transform: scale(0.98);
+ }
+
+.searchbox
+{
+	position: relative;
+	width: 65px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	margin: 23px;
+}
+.searchbox:hover
+{
+	width: 400px;
+
+}
+.searchbox::before
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(#fff,#fff,#e3e3e3);
+	z-index: 1;
+	filter: blur(1px);
+} 
+.searchbox::after
+{
+	position: absolute;
+	top: 0;
+	right: -10px;
+	width: 100px;
+	height: 100%;
+	background: #9d9d9d;
+	z-index: 1;
+	filter: blur(1px);
+} 
+
+
+.shadow
+{
+	position: absolute;
+	top: 0;
+	left: -50px;
+
+	
+	height: 300px;
+	
+	
+	 
+	pointer-events: none;
+}
+.shadow::before
+{
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: #cfd1e1;
+	z-index: 1;
+}
+
+.searchbox input
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border:none;
+	padding: 10px 25px;
+	outline: none;
+	font-size: 1.1em;
+	color:#555;
+	background: linear-gradient(#dbdae1,#a3aaba);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+				15px 15px 15px rgba(0,0,0,0.1),
+				20px 20px 15px rgba(0,0,0,0.1),
+				30px 30px 15px rgba(0,0,0,0.1),
+				inset 1px 1px 2px #fff;
+}
+.searchbox input::placeholder,
+.searchbox input
+{
+	color: transparent;
+}
+.searchbox:hover input::placeholder,
+.searchbox:hover input
+{
+	color:#555;
+}
+ion-icon
+{
+	position: absolute;
+	right: 20px;
+	color:#555;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* social media block*/
+#social 
+{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 25px;
+	letter-spacing: 4px;
+	padding: 200px 100px;
+	color:#555;
+	text-align: center;
+}
+.social-media
+{
+	display: flex;
+	justify-content: center;
+
+}
+.social-media a
+{
+	display: flex;
+	background: #e3edf7;
+	height: 75px;
+	width: 75px;
+	margin: 0 15px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+	border: 1px solid rgba(0,0,0,0);
+	transition: transform 0.5s; 
+}
+
+.social-media a i
+{
+	font-size: 35px;
+	color: #777;
+	transition: transform 0.5s;
+
+}
+.social-media a:hover
+{
+	box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+				-0.5px -0.5px 0px rgba(255,255,255,1),
+				0.5px 0.5px 0px rgba(0,0,0,0.15),
+				0px 12px 10px -10px rgba(0,0,0,0.05);
+	border: 1px solid rgba(0,0,0,0.1);
+	transform: translateY(2px);
+}
+
+.social-media a:hover i
+{
+	transform: scale(0.90);
+}
+.social-media a:hover .fa-facebook
+{
+	color: #3b5998;
+}
+.social-media a:hover .fa-whatsapp
+{
+	color: #4fce5d;
+}
+.social-media a:hover .fa-instagram
+{
+	color: #f14843;
+}
+.social-media a:hover .fa-twitter
+{
+	color: #00acee;
+}
+.social-media a:hover .fa-youtube
+{
+	color: #f00;
+}
+.social-media a:hover .fa-telegram
+{
+	color: #0000dd;
 }
 
 
