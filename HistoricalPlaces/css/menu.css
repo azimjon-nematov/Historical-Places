@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 
-
+/*Настройка скроллбара*/
 }
 ::-webkit-scrollbar
 {
@@ -22,7 +22,7 @@
 	background: linear-gradient(transparent,#00c6ff);
 }
 
-
+/*Настройка тела сайта*/
 body{
 	position: absolute;
 	display: block;
@@ -34,6 +34,15 @@ body{
 	overflow: auto;
 }
 
+/*ВВерхний отступ сайта*/
+.Upper
+{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+}
+
+/*Горизонтальное меню*/
 .container
 {
 	display: inline-block; 
@@ -118,7 +127,7 @@ body{
 	
 }
 
-
+/*Карточки мест*/
 .container2
 {
 	position: relative;
@@ -199,6 +208,7 @@ box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5),
  	transform: scale(0.98);
  }
 
+/*Поисковик*/
 .searchbox
 {
 	position: relative;
@@ -386,6 +396,202 @@ ion-icon
 	color: #0000dd;
 }
 
+/*рейтиноговая Шкала*/
+#rating1
+{
+	position: absolute;
+	top: 88%;
+	display: flex;
+	transform: rotateY(180deg);
+
+}
+#rating1 input
+{
+	display: none;
+}
+#rating1 label
+{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+}
+#rating1 label:before
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #101010;
+}
+#rating1 label:after
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transform: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+#rating1 label:hover:after,
+#rating1 label:hover ~ label:after,
+#rating1 input:checked ~ label:after
+{
+	opacity: 1;
+}
+
+#rating2
+{
+	position: absolute;
+	top: 88%;
+	display: flex;
+	transform: rotateY(180deg);
+
+}
+#rating2 input
+{
+	display: none;
+}
+#rating2 label
+{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+}
+#rating2 label:before
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #101010;
+}
+#rating2 label:after
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transform: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+#rating2 label:hover:after,
+#rating2 label:hover ~ label:after,
+#rating2 input:checked ~ label:after
+{
+	opacity: 1;
+}
+
+#rating3
+{
+	position: absolute;
+	top: 88%;
+	display: flex;
+	transform: rotateY(180deg);
+
+}
+#rating3 input
+{
+	display: none;
+}
+#rating3 label
+{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+}
+#rating3 label:before
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #101010;
+}
+#rating3 label:after
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transform: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+#rating3 label:hover:after,
+#rating3 label:hover ~ label:after,
+#rating3 input:checked ~ label:after
+{
+	opacity: 1;
+}
+
+#rating4
+{
+	position: absolute;
+	top: 88%;
+	display: flex;
+	transform: rotateY(180deg);
+
+}
+#rating4 input
+{
+	display: none;
+}
+#rating4 label
+{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+}
+#rating4 label:before
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #101010;
+}
+#rating4 label:after
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #1f9cff;
+	top: 0;
+	opacity: 0;
+	transform: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+#rating4 label:hover:after,
+#rating4 label:hover ~ label:after,
+#rating4 input:checked ~ label:after
+{
+	opacity: 1;
+}
 
 
-
+.Down
+{
+	 width: 100%;
+	 height: 200px;
+}
