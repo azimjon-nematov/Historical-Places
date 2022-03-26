@@ -151,8 +151,8 @@ body{
 }
 .container2 .card:hover
 {
-box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
-			inset  6px 6px 20px rgba(0,0,0,0.05);	
+box-shadow: inset -6px -6px 10px rgba(255,255,255,0.1),
+			inset  6px 6px 20px rgba(0,0,0,0.1);	
 }
 
 .container2 .card .imgBox
@@ -190,13 +190,13 @@ box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
 	color: #32a3b1;
 	font-size: 16px;
 	text-decoration: none;
-	box-shadow:  -4px -4px 15px rgba(255,255,255,1),
-				  6px 6px 15px rgba(0,0,0,1);	
+	box-shadow:  -4px -4px 15px rgba(255,255,255,0.1),
+				  6px 6px 15px rgba(0,0,0,0.1);	
 
 }
 .container2 .card .ContentBox a:hover
 {
-box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5),
+box-shadow: inset -4px -4px 10px rgba(255,255,255,0.1),
 			inset  6px 6px 10px rgba(0,0,0,0.1);	
 }
 .container2 .card a:hover span
