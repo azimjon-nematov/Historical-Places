@@ -36,16 +36,18 @@
 .box ::before {
 	content: '';
 	position: absolute;
-	width: 25%;
-	height: 140%;
+	width: 50%;
+	height: 250%;
+	top: -70%;
+	left: -30%;
 	background: linear-gradient(#00ccff, #d400d4); 
-	animation: animate 6s linear infinite 
+	animation: animate 6s linear infinite; 
 }
 .box ::after 
 {
 	content: '';
 	position: absolute;
-	inset: 6px;
+	inset: 10px;
 	background: #0e1538;
 	border-radius: 16px;
 } 
