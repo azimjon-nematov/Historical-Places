@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Historical places</title>
 	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/slider.css">
 	<link rel="stylesheet" type="text/css" href="../css/page1.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-	
+	</style>
 	
 </head>
 <body>
@@ -31,7 +32,60 @@
 
 	<div class="Content">
 		<h2>Мавзолей Шейха Муслихиддина</h2>
-		<img src="../pictures/Истаравшан.jfif"width="75%" style="border: 2px solid #fff">
+<div class="slider">
+		<div class="slides">
+			<!--radio buttons start-->
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			<!--radio buttons end-->
+			<!--slide images start-->
+			<div class="slide first">
+				<img src="../pictures/Истаравшан.jfif" alt="">
+			</div>
+			<div class="slide">
+				<img src="../pictures/mugteppa.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="../pictures/ҲУЛБУК.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="../pictures/Гиссар.jpg" alt="">
+			</div>
+			<!--slide images end-->
+			<!--automatic navigation start-->
+			<div class="navigation-auto">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+			</div>
+			<!--automatic navigation end-->
+		</div>
+		<!--manual navigation start-->
+		<div class="navigation-manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+		</div>
+		<!--manual navigation end-->
+	</div>
+	<!--image slider end-->
+
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 4){
+				counter = 1;
+			}
+		}, 5000);
+	</script>
+
+		<!-- <img src="../pictures/Истаравшан.jfif"width="75%" style="border: 2px solid #fff"> -->
 		<div class="InfoDiv">
 			<p style="font-size: 22px; text-align: justify; color: #fff">
 				Крупный культовый ансамбль, известный как мавзолей шейха Муслихиддина, находится в историческом центре Ходжента, втором по величине городе республики, расположенном на севере Таджикистана. Он назван по имени Муслихиддина Худжанди, поэта, правителя города, жившего в XII веке. Сохранилась его биография под название «Манокиб». По народным преданиям, шейх Муслихиддин был святым чудотворцем. После его смерти, первоначально он был похоронен в селении Унджи (пригород Ходжента), но через какое–то время его почитатели перенесли прах шейха на то место, где он сейчас покоится, и воздвигли мавзолей над его могилой. 
