@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Historical places</title>
 	<link rel="stylesheet" type="text/css" href="../css/menu.css">
-	<link rel="stylesheet" type="text/css" href="../css/page1.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/page1.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 	
 	
@@ -36,6 +36,60 @@
 			<p style="font-size: 22px; text-align: justify; color: #fff">
 				Бальджувон или Бальджуан (Балҷувон) — село, административный центр Бальджуванского района Таджикистана. Во времена Бухарского эмирата — столица Бальджуанского бекства, входящего в состав Куляба, подчиненного Бухаре. Население Бальджуанского бекства (главным образом — Таджики) занималось скотоводством и частично земледелием. В 1900 году Бальджуан представлял собой селение в 300 дворов с небольшой цитаделью, расположенное на высоте 2720 футов над уровнем моря, на правом берегу речки Сурхоб, впадающей южнее под именем Бальджуан-дарьи в Аму-дарью.
 			</p>
+		</div>
+		<div class="imagebox">
+			<div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="4.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
 		</div>
 	</div>
 <!--
